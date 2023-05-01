@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <div class="col">
+          <h1 id="logo">ToDo</h1>
+        </div>
+        <div class="col">
+          <img src="add.svg" alt="add icon" id="add-icon" />
+        </div>
+      </div>
+    </header>
+
+    <div class="ToDo"></div>
+    <div id="dark-background">
+      <div class="popup" id="add">
+        <h2>Vad ska göras?</h2>
+        <input type="text" id="todo-text" />
+        <h2>Datum</h2>
+        <input
+          id="todo-date"
+          onfocus="(this.type='date')"
+          onblur="(this.type='date')"
+        />
+        <h2>Tid (valfri)</h2>
+        <input id="todo-time" type="time" />
+        <div id="add-todo"><img src="add.svg" alt="Add icon" /></div>
+      </div>
+      <div class="popup" id="edit">
+        <h1>Ändra</h1>
+        <h2>Vad ska göras?</h2>
+        <input type="text" id="edit-text" />
+        <h2>Datum</h2>
+        <input type="date" id="edit-date" />
+        <h2>Tid (valfri)</h2>
+        <input type="time" id="edit-time" />
+        <div class="edit-todo"><img src="edit.svg" alt="Edit icon" /></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
